@@ -5,9 +5,9 @@ BaudRate.BaudRate115200,
 "TALKTALK344A29",
 "9NC4EJE6"
 )
-basic.forever(function () {
+loops.everyInterval(60000, function () {
     ESP8266ThingSpeak.connectThingSpeak(
-    "api.thingspeak.com",
+    "api.thingspeak.com/update?api_key",
     "VPYPHZ9H5JUPDLSG",
     5,
     0,
